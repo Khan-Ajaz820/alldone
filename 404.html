@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>404 - Page Not Found | Amosix</title>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;600;700&display=swap" rel=stylesheet>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{background:linear-gradient(135deg,#0f0c29 0,#302b63 50%,#24243e 100%);color:#e0e0e0;font-family:Poppins,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}.container{text-align:center;padding:40px 20px;position:relative;z-index:10}.emoji-404{font-size:clamp(80px, 15vw, 140px);margin-bottom:20px;animation:float 3s ease-in-out infinite}h1{font-family:Righteous,cursive;font-size:clamp(3rem, 8vw, 5rem);background:linear-gradient(135deg,#8a2be2,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:15px;text-shadow:0 0 30px rgba(138,43,226,.5)}h2{font-size:clamp(1.2rem, 3vw, 1.8rem);color:#fff;margin-bottom:15px;font-weight:600}p{font-size:clamp(.9rem, 2vw, 1.1rem);color:#b0b0b0;margin-bottom:35px;max-width:500px;margin-left:auto;margin-right:auto}.btn-container{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}a{display:inline-block;padding:14px 35px;background:linear-gradient(135deg,#8a2be2,#00d4ff);color:#fff;text-decoration:none;border-radius:30px;font-weight:700;font-size:1rem;border:2px solid #00d4ff;transition:all .3s ease;box-shadow:0 0 20px rgba(0,212,255,.4)}a:hover{transform:translateY(-3px);box-shadow:0 0 30px rgba(0,212,255,.7)}.btn-secondary{background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.3);box-shadow:none}.btn-secondary:hover{background:rgba(255,255,255,.15);box-shadow:0 5px 20px rgba(0,0,0,.3)}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}.particles{position:absolute;width:100%;height:100%;overflow:hidden}.particle{position:absolute;width:3px;height:3px;background:#00d4ff;border-radius:50%;opacity:.6;animation:particleFloat 12s ease-in-out infinite}@keyframes particleFloat{0%,100%{transform:translate(0,0);opacity:0}10%,90%{opacity:.6}100%{transform:translate(30px,-100vh);opacity:0}}@media (max-width:480px){.btn-container{flex-direction:column;align-items:center}a{width:100%;max-width:280px}}</style>
+</head>
+<body>
+<div class=particles>
+<div class=particle style=left:10%;animation-delay:0s></div>
+<div class=particle style=left:30%;animation-delay:2s></div>
+<div class=particle style=left:50%;animation-delay:4s></div>
+<div class=particle style=left:70%;animation-delay:1s></div>
+<div class=particle style=left:90%;animation-delay:3s></div>
+</div>
+<div class=container>
+<div class=emoji-404>🤔</div>
+<h1>404</h1>
+<h2>Oops! Page Not Found</h2>
+<p>Looks like this page got lost in the emoji universe. Let's get you back on track!</p>
+<div class=btn-container>
+<a href=index.html >🏠 Go Home</a>
+<a href=contact.html class=btn-secondary>🎨 Report</a>
+</div>
+</div>
+<script>const emojis=["🤔","😕","🔍","🧐","😅","🎭","🎨"];let currentIndex=0;const emojiElement=document.querySelector(".emoji-404");setInterval((()=>{currentIndex=(currentIndex+1)%emojis.length,emojiElement.textContent=emojis[currentIndex]}),2e3)</script>
+</body>
+</html>
